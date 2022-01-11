@@ -18,10 +18,11 @@ export async function getAll() {
 
 const dataMunged = (avatars) => {
   const avatarMunged = {
+    id: avatars._id,
     name: avatars.name,
     allies: avatars.allies,
     enemies: avatars.enemies,
-    photoUrl: avatars.enemies,
+    photoUrl: avatars.photoUrl,
   };
   return avatarMunged;
 };
